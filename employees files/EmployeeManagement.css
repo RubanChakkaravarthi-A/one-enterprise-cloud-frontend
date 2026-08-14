@@ -1,0 +1,827 @@
+/* =========================================================
+   EMPLOYEE MANAGEMENT SECTION
+========================================================= */
+
+.employee-management-section {
+
+    min-height:100vh;
+
+    padding:70px 0 90px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f3f7ff,
+        #ffffff,
+        #eef4ff
+    );
+
+}
+
+
+
+.employee-management-section .container{
+
+    width:min(92%,1280px);
+
+    margin:auto;
+
+}
+
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+
+.employee-header-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.employee-management-title h1{
+
+    margin:0;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#172033;
+
+}
+
+
+
+.employee-management-title p{
+
+    margin-top:12px;
+
+    color:#64748b;
+
+}
+
+
+
+
+
+/* DIRECTORY BUTTON */
+
+.directory-btn{
+
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:13px 24px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+
+}
+
+
+
+.directory-btn:hover{
+
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+
+/* =========================================================
+ FORM CARD
+========================================================= */
+
+
+.employee-form-card{
+
+
+    width:100%;
+
+    padding:42px;
+
+    background:white;
+
+    border-radius:24px;
+
+    border:1px solid #e2e8f0;
+
+    box-shadow:
+
+    0 12px 35px rgba(15,23,42,.06);
+
+
+}
+
+
+
+
+.employee-form-header{
+
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+.employee-form-header h2{
+
+
+    margin:0;
+
+    color:#2563eb;
+
+    font-size:28px;
+
+    font-weight:800;
+
+
+}
+
+
+
+
+.employee-form-header p{
+
+
+    margin-top:10px;
+
+    color:#64748b;
+
+
+}
+
+
+
+
+
+/* =========================================================
+ FORM GRID
+========================================================= */
+
+
+.employee-form-grid{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.form-group{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+
+}
+
+
+
+
+
+.form-group label{
+
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#334155;
+
+
+}
+
+
+
+
+
+.form-group input,
+.form-group select{
+
+
+    width:100%;
+
+    height:54px;
+
+    padding:0 16px;
+
+    border-radius:11px;
+
+    border:1px solid #cbd5e1;
+
+    background:#fff;
+
+    color:#334155;
+
+    font-size:15px;
+
+    outline:none;
+
+
+}
+
+
+
+.form-group input::placeholder{
+
+
+    color:#94a3b8;
+
+
+}
+
+
+
+
+
+.form-group input:focus,
+.form-group select:focus{
+
+
+    border-color:#2563eb;
+
+
+    box-shadow:
+
+    0 0 0 3px rgba(37,99,235,.12);
+
+
+}
+
+
+
+
+
+/* DATE */
+
+input[type="date"]{
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+/* =========================================================
+ BUTTONS
+========================================================= */
+
+
+.form-button-group{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:35px;
+
+
+}
+
+
+
+
+
+.add-employee-btn{
+
+
+    height:52px;
+
+    padding:0 30px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.add-employee-btn:hover{
+
+
+    background:#1d4ed8;
+
+
+}
+
+
+
+
+
+.form-button-group button[type="button"]{
+
+
+    height:52px;
+
+    padding:0 25px;
+
+    border-radius:12px;
+
+    border:1px solid #cbd5e1;
+
+    background:white;
+
+    color:#334155;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+/* =========================================================
+ TABLE HEADER
+========================================================= */
+
+
+.employee-table-section{
+
+
+    margin-top:40px;
+
+
+}
+
+
+
+
+
+.employee-table-header{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.employee-table-header h2{
+
+
+    color:#2563eb;
+
+    font-size:24px;
+
+
+}
+
+
+
+
+/* TOTAL EMPLOYEES */
+
+.employee-count{
+
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 20px;
+
+    background:#2563eb;
+
+    color:white !important;
+
+    border-radius:25px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+ TABLE
+========================================================= */
+
+
+.employee-table-container{
+
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow-x:auto;
+
+    border:1px solid #e5e7eb;
+
+    box-shadow:
+
+    0 15px 40px rgba(37,99,235,.08);
+
+
+}
+
+
+
+.employee-table{
+
+
+    width:100%;
+
+    min-width:1100px;
+
+    border-collapse:collapse;
+
+
+}
+
+
+
+
+.employee-table th{
+
+
+    padding:16px 18px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-weight:700;
+
+    text-align:left;
+
+
+}
+
+
+
+
+.employee-table td{
+
+
+    padding:16px 18px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    color:#374151;
+
+    vertical-align:middle;
+
+
+}
+
+
+
+
+
+.employee-table tbody tr:hover td{
+
+
+    background:#f8fbff;
+
+
+}
+
+
+
+
+
+/* =========================================================
+ PHOTO
+========================================================= */
+
+
+.employee-photo{
+
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-right:10px;
+
+
+}
+
+
+
+.employee-name-cell{
+
+
+    display:flex;
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+ STATUS
+========================================================= */
+
+
+.employee-status{
+
+
+    display:inline-flex;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+
+}
+
+
+
+.employee-status.active{
+
+
+    background:#dcfce7;
+
+    color:#166534;
+
+
+}
+
+
+
+.employee-status.inactive{
+
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+
+}
+
+
+
+
+
+
+/* =========================================================
+ ACTION BUTTONS
+========================================================= */
+
+
+.employee-action-buttons{
+
+
+    display:flex;
+
+    gap:10px;
+
+
+}
+
+
+
+.employee-edit-btn{
+
+
+    min-width:70px;
+
+    height:36px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#f59e0b;
+
+    color:white;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.employee-edit-btn:hover{
+
+
+    background:#d97706;
+
+
+}
+
+
+
+
+
+.employee-delete-btn{
+
+
+    min-width:70px;
+
+    height:36px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#dc2626;
+
+    color:white;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.employee-delete-btn:hover{
+
+
+    background:#b91c1c;
+
+
+}
+
+
+
+
+
+/* EMPTY STATE */
+
+
+.no-employees{
+
+
+    padding:45px;
+
+    text-align:center;
+
+    color:#6b7280;
+
+    font-size:16px;
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+ RESPONSIVE
+========================================================= */
+
+
+@media(max-width:768px){
+
+
+.employee-header-row{
+
+
+    flex-direction:column;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+
+}
+
+
+
+.employee-form-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.employee-form-card{
+
+
+    padding:25px;
+
+
+}
+
+
+
+.employee-table-header{
+
+
+    flex-direction:column;
+
+    gap:15px;
+
+    align-items:flex-start;
+
+
+}
+
+
+
+}

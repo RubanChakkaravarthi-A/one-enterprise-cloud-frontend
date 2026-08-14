@@ -1,0 +1,335 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.attendance-page{
+
+    min-height:100vh;
+
+    padding:40px;
+
+    font-family:'Inter',sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #eef5ff,
+        #f8fbff,
+        #edf4ff
+    );
+
+    color:#1f2937;
+
+}
+
+
+
+/* =========================
+   TOP HEADER
+========================= */
+
+
+.attendance-topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    margin-bottom:35px;
+
+}
+
+
+
+.attendance-topbar h1{
+
+    font-size:36px;
+
+    color:#2563eb;
+
+    font-weight:800;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.attendance-topbar p{
+
+    color:#6b7280;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* =========================
+ PROFILE
+========================= */
+
+
+.attendance-profile{
+
+    background:#ffffff;
+
+    padding:18px 30px;
+
+    border-radius:16px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+
+.attendance-profile h3{
+
+    color:#1f2937;
+
+    font-size:18px;
+
+}
+
+
+.attendance-profile span{
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* =========================
+ STATS CARDS
+========================= */
+
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(5,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+.stat-card{
+
+
+    background:
+    rgba(255,255,255,.85);
+
+
+    backdrop-filter:blur(15px);
+
+
+    padding:30px;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 12px 30px rgba(0,0,0,.08);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.stat-card:hover{
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+    0 20px 40px rgba(37,99,235,.18);
+
+
+}
+
+
+
+
+.stat-card h2{
+
+
+    font-size:36px;
+
+
+    color:#2563eb;
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+.stat-card p{
+
+
+    font-size:15px;
+
+
+    font-weight:600;
+
+
+    color:#374151;
+
+
+}
+
+
+
+
+
+/* =========================
+ DATE CARD
+========================= */
+
+
+.current-date{
+
+
+    background:white;
+
+
+    padding:20px 25px;
+
+
+    border-radius:16px;
+
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.08);
+
+
+    font-size:16px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+.current-date span{
+
+
+    color:#2563eb;
+
+
+}
+
+
+
+
+/* =========================
+ RESPONSIVE
+========================= */
+
+
+@media(max-width:1200px){
+
+
+    .stats{
+
+
+        grid-template-columns:
+
+        repeat(3,1fr);
+
+
+    }
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .attendance-page{
+
+        padding:20px;
+
+    }
+
+
+
+    .attendance-topbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .attendance-topbar h1{
+
+        font-size:28px;
+
+    }
+
+
+}
