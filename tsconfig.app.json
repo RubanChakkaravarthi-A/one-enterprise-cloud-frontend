@@ -24,5 +24,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "employees files/EmployeeCard.tsx", "employees files/EmployeeAudit.tsx", "employees files/EmployeeDetails.tsx"]
+  "include": [
+    "src"
+  ]
 }

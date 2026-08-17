@@ -10,6 +10,10 @@ export interface Employee {
 
   designation: string;
 
-  
+  status: string;
+
+  mobile?: string;
+
+  joiningDate?: string;
 
 }

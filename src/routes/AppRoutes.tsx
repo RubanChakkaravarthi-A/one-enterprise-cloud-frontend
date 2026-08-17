@@ -1,36 +1,13 @@
-import { Routes, Route } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
 
-import LandingPage from "../pages/LandingPage";
-import EmployeeRegistration from "../pages/EmployeeRegistration";
-import EmployeeDirectory from "../pages/EmployeeDirectory";
+import { routeConfig } from "./routeConfig";
 
 
 function AppRoutes() {
 
-  return (
+  const routes = useRoutes(routeConfig);
 
-    <Routes>
-
-
-      <Route
-        path="/"
-        element={<LandingPage />}
-      />
-
-
-      <Route
-        path="/register"
-        element={<EmployeeRegistration />}
-      />
-
-      <Route
-  path="/employees"
-  element={<EmployeeDirectory />}
-/>
-
-    </Routes>
-
-  );
+  return routes;
 
 }
 
